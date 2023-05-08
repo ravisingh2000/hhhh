@@ -12,7 +12,7 @@ const io = socketIo(server, {
       "http://localhost:4200",
       "https://www.piesocket.com",
       "https://websocketking.com",
-      "https://hhh-m0uc.onrender.com"
+      "https://hhh-m0uc.onrender.com",
       "http://127.0.0.1:5501",
       "https://coachchat-admin.web.app",
     ],
