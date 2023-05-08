@@ -12,6 +12,7 @@ const io = socketIo(server, {
       "http://localhost:4200",
       "https://www.piesocket.com",
       "https://websocketking.com",
+      "https://hhh-m0uc.onrender.com"
       "http://127.0.0.1:5501",
       "https://coachchat-admin.web.app",
     ],
@@ -26,6 +27,7 @@ io.on("connection", (socket) => {
     console.log(data);
   });
 });
-server.listen(port, () => {
+
+server.listen(process.env.port || process.env.PORT ||port , () => {
   console.log(`Server running at port ${port}`);
 });
